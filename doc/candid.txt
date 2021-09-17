@@ -1,0 +1,28 @@
+*candid.txt*      Filetype plugin for Candid
+
+Author:  Roman Kashitsyn <roman.kashitsyn@gmail.com>
+License: Same terms as Vim itself (see |license|)
+
+==============================================================================
+CONTENTS                                                      *rust*
+
+1. Introduction                                                 |candid-intro|
+2. Compiler                                                  |candid-compiler|
+
+==============================================================================
+INTRODUCTION                                                    *candid-intro*
+
+Candid is an interface description language (IDL) for interacting with
+canisters (also known as services or actors) running on the Internet Computer.
+
+This plugin provides syntax and supporting functionality for the Candid
+filetype. It requires Vim 8 or higher.
+
+==============================================================================
+COMPILER                                                     *candid-compiler*
+
+The plugin defines and sets the compiler to "didc". Simply use the
+command ":make" to run `didc check` on the current file and load the errors
+into the quickfix window.
+
+ vim:tw=78:et:ft=help:norl:
